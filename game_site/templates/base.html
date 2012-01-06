@@ -2,13 +2,14 @@
 <html>
 <head>
     <meta lang="en" charset="utf-8">
-    <title>{%block title%}Game Site{%endblock%}</title>
+    <title>{%block title%}{{ head_title }}{%endblock%}</title>
     {%block head%}
     {%endblock%}
 </head>
 <body>
-<h1>Game Site</h1>
+<h1>{{page_title}}</h1>
 {%block bodycontent%}
+{{ page_body }}
 {%endblock%}
 </body>
 </html>
